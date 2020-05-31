@@ -10,9 +10,10 @@ void SaveToFile(string Description, int year, int month, int day, double value, 
 void Income_Des(bool type);
 void Display();
 int LineInFile();
+void Edit();
 
 int main(){
-
+/*
 	//Info Expenses;
 	int option;
 	bool type;
@@ -47,6 +48,8 @@ int main(){
 		
 		else if(option!=1 && option!=2 && option!=3) cout<<"Option not valid"<<endl;
 		
-	}while(option!=1 && option!=2 && option!=3);
+	}while(option!=1 && option!=2 && option!=3);*/
+	Edit();
+	return 0;
 	
 }

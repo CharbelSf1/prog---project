@@ -4,6 +4,7 @@
 using namespace std;
 
 void date(int &day, int &month, int &year);
+void Edit();
 int LineInFile();
 
 struct Info{
@@ -53,6 +54,11 @@ void Display(){
 		}
 		
       	else if(option == 2){
+      		
+      		//fileCout >> income.date[2] >> slash >> income.date[1] >> slash >> income.date[0];
+			//cout << income.date[2] << slash << income.date[1] << slash << income.date[0];
+			
+			void Edit();
       		
 		  }
 	}

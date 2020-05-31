@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Main.o Dates.o Income.o WriteToFile.o Display.o LineInFile.o
-LINKOBJ  = Main.o Dates.o Income.o WriteToFile.o Display.o LineInFile.o
+OBJ      = Main.o Dates.o Income.o WriteToFile.o Display.o LineInFile.o Edit.o
+LINKOBJ  = Main.o Dates.o Income.o WriteToFile.o Display.o LineInFile.o Edit.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -std=c++11
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -41,3 +41,6 @@ Display.o: Display.cpp
 
 LineInFile.o: LineInFile.cpp
 	$(CPP) -c LineInFile.cpp -o LineInFile.o $(CXXFLAGS)
+
+Edit.o: Edit.cpp
+	$(CPP) -c Edit.cpp -o Edit.o $(CXXFLAGS)
